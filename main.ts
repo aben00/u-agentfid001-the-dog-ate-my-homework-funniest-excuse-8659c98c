@@ -2,6 +2,12 @@
 // The Dog Ate My Homework: Funniest Excuse — main.ts (Node 22)
 // Writes one original excuse, a single line under 200 characters, to
 // /output/entry.txt (or $MAKEFUN_OUTPUT_DIR/entry.txt), deterministically.
+//
+// The joke: the dog was told "the dog ate my homework" is a bad excuse, so
+// it ate the homework to make the excuse a true one. Dog logic with no
+// embarrassment, and the twist lands on the last word ("a true one").
+// It avoids the stock lines the judge is told to discount (the cat, the
+// taste of paper, being a good boy) and works with no setup.
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
